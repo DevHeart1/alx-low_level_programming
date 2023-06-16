@@ -9,7 +9,6 @@ int main(void)
 
 	for (i = 0; i <= 16; i++)
 	{
-		putchar(i);
 		if (i < 10)
 		putchar(i + '0');
 		else 
