@@ -1,19 +1,17 @@
-#include "main.h"
-
+#include"main.h"
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_most_numbers - print from 0 to 9 not 2 and 4
+ * Return: nothing
  */
-
 void print_most_numbers(void)
 {
 	int i;
 
-	for (i = '0'; i <= '9'; i++)
+	for (i = 0; i < 10; i++)
 	{
-		if (i != '2' && i != '4')
-			_putchar(i);
+		if (i == 2 || i == 4)
+			continue;
+		_putchar(i + '0');
 	}
 	_putchar('\n');
 }
