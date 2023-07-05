@@ -1,5 +1,3 @@
-#include " main.h"
-
 /**
  * helper - returns the natural square root of a number
  * @n: the number to find the square root of
