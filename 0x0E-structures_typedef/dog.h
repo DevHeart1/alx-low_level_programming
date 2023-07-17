@@ -1,17 +1,17 @@
-#include <stdio.h>
+#ifndef MAIN_H
+#define MAIN_H 
 
-/**
- * 
- * struct dog - A structure that contains char and float.
- * @name: first member
- * @age: second member
- * @owner: third member
- * Return: Always 0.
- */
-
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 struct dog
 {
 	char *name;
-	float age;
+	float *age;
 	char *owner;
 };
+
+
+
+#endif
