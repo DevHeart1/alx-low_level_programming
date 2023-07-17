@@ -2,7 +2,7 @@
 
 /**
  * 
- * struct dog -  
+ * struct dog - A structure that contains char and float.
  * @name: first member
  * @age: second member
  * @owner: third member
