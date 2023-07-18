@@ -4,9 +4,7 @@
 
 /**
  * print_dog - prints a variable of type struct dog
- * @name: The name of the dog
- * @age: The age of the dog
- * @owner: The name of the dog's owner
+ * @d: pointer to the struct dog to print
  */
 
 void print_dog(struct dog *d)
