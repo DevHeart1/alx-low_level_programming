@@ -9,7 +9,7 @@
  *
  * Return: the index of the element for which cmp is not 0
  */
- 
+
 #include <stddef.h>
 int int_index(int *array, int size, int (*cmp)(int))
 {
