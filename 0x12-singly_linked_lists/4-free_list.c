@@ -9,13 +9,11 @@
 
 void free_list(list_t *head)
 {
-	list_t *ptr = malloc(sizeof(list_t));
-
-	ptr = head;
-	while (ptr != NULL)
+	if (head)
 	{
-		free(ptr->str);
-		free(ptr);
-		ptr = ptr->next;
+		free_list(head->next);
+		if (head->str)
+			free(head->str);
+		free(head);
 	}
 }
