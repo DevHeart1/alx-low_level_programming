@@ -5,11 +5,20 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * struct listint_s - This is the structure for singly linked list
+ * @n: this represents the integer
+ * @next: this points to the next node
+ *
+ * Description: this struct is a singly linked list node structure
+ *
+ */
+
 
 typedef struct listint_s
 {
-    int n;
-    struct listint_s *next;
+	int n;
+	struct listint_s *next;
 } listint_t;
 
 size_t print_listint(const listint_t *h);
