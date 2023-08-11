@@ -18,7 +18,7 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	int file_D = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
+	file_D = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 
 	if (file_D == -1)
 	{
@@ -27,9 +27,9 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		ssize_t bytes_W = write(file_D, text_content, strlen(text_content));
+		bytes_W = write(file_D, text_content, strlen(text_content));
 
-		if (bytes_written == -1)
+		if (bytes_W == -1)
 		{
 			close(file_D);
 			return (-1);
